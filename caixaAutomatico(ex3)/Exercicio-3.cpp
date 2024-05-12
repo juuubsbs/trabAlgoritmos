@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    /*  Exercicio 03, As notas consideradas são de 100, 50, 20, 10, 5, 2. 
+    /* Exercicio 03, As notas consideradas são de 100, 50, 20, 10, 5, 2. 
     As moedas consideradas são de 1, 0.50, 0.25, 0.10, 0.05 e 0.01. 
     Por exemplo, R$75,25 pode ser decomposto em 1 nota de R$50, 1 nota de R$20, 
     1 nota de R$5 e 1 moeda de 0,25 centavos.*/
