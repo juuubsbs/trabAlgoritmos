@@ -9,7 +9,7 @@ int main()
     1 nota de R$5 e 1 moeda de 0,25 centavos.*/
 
     double resultado, usuario, divisor;
-    int  n, result1;
+    int n = 0, result1;
 
     cout << "Digite o valor a ser decomposto: ";
     cin >> usuario;
@@ -38,11 +38,12 @@ int main()
         if(result1 > 0.00)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
         {
             resultado = usuario - (divisor*result1);
-            system("pause");
             cout << "A quantidade de cedulas/moedas de R$" << divisor << " eh " << result1 << endl; 
             usuario = resultado;
         }
     }
     while (divisor > 0.00);
+    system("pause");
+
     return 0;
 }
