@@ -4,23 +4,25 @@ using namespace std;
 int main()
 {
     char resposta, letra = 'C';
-    int moves, random, i = 0, pos = 3, u;
+    int i = 0, pos = 3, u;
     bool errado;
     
     //loop inicial para perguntar a posição do jogador
     do
     {
+        //bool para repetir a pergunta de embaralhador/adivinhador ate o usuario digitar uma das duas respostas
         errado = true;
         cout << "voce quer jogar como embaralhador(e) ou adivinhador(a)? ";
         cin >> resposta;
-    
+        
         char a = 's';
+            //resposta == 'e' indica que o usuario sera o embaralhador 
             if(resposta == 'e')
             {
                 cout << "bem-vind@ ao jogo dos copos, voce escolheu a opcao embaralhador... " << endl;
                 cout << "digite a posicao inicial do objeto, A(1) B(2) C(3): " << endl;
                 cin >> pos;
-                while(a != 'n')
+                do
                 {
                     cout << "de acordo com o menu abaixo, digite qual movimento voce quer realizar..."<< endl;
                     cout << "nao se preocupe, voce podera digitar mais movimentos apos esta insercao..." << endl;
@@ -47,16 +49,26 @@ int main()
                     else
                     {
                         i++;
-                        cout << "a opcao foi mudada "<< i << "vez(es)" << endl;
+                        cout << "a opcao foi mudada "<< i << " vez(es)" << endl;
                         cout << "a posicao atual eh '"<< letra << "' voce gostaria de realizar mais movimentos? sim(s)/nao(n): ";
                         cin >> a;
                         
                     }
                 }
+                while(a != 'n');
             }
-    
-             else if(resposta == 'a') 
+            if(i>0)
+            {
+                resposta = 'a';
+            }
+            // resposta == 'a' indica que o usuario sera o adivinhador, porem ele sempre sera o adivinhador ao 
+             if(resposta == 'a') 
              {
+                 if(i!=0)
+                 {
+                     cout << "agora voce sera encaminhado para o modo adivinhador..." << endl;
+                 }
+                 
                  int cont;
                  cout << "bem-vind@ ao jogo dos copos, voce escolheu a opcao adivinhador..." << endl;
                  cout << "a posicao inicial do objeto eh: " << letra << endl;
@@ -65,25 +77,36 @@ int main()
             
                  while(cont > 0)
                  {
-                     while(pos > 1)
-                     {
-                         
-                     }
+                    if (pos < 3)
+                    {
+                        pos ++;
+                    }
+                    else pos = pos - 2;
+                     cont --;
                  }
-                 cout << cont << endl;
-                 cout << pos << endl;
+                 int palpite;
+                 cout << "digite ao lado o seu palpite, sendo A(1) B(2) e C(3): ";
+                 cin >> palpite;
+
+                 if (palpite != pos)
+                 {
+                    cout << "lamento, voce errou :(" << endl;
+                 }
+                 else cout << "voce acertou! :)" << endl;
              }
-             else cout << "valor digitado incorretamente" << endl; errado = false;
+             else if (resposta != 'a' && resposta != 'e')
+             {
+                cout << "valor digitado incorretamente" << endl; 
+                errado = false;
+             } 
+             
     }
     while(errado == false);
-
-    
+    cout << "obrigada por jogar o jogo dos copos!" << endl;
+    system("pause");
    
 
 
 
     return 0;
 }
-
-// fazer um do while com bool para enquanto for errado pedir dnv
-//
