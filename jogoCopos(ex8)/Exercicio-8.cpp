@@ -15,6 +15,7 @@ int main()
         cout << "voce quer jogar como embaralhador(e) ou adivinhador(a)? ";
         cin >> resposta;
         
+        
         char a = 's';
             //resposta == 'e' indica que o usuario sera o embaralhador 
             if(resposta == 'e')
