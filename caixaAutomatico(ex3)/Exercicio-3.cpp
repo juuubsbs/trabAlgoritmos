@@ -8,11 +8,12 @@ int main()
     Por exemplo, R$75,25 pode ser decomposto em 1 nota de R$50, 1 nota de R$20, 
     1 nota de R$5 e 1 moeda de 0,25 centavos.*/
 
-    double resultado, usuario, divisor;
-    int n = 0, result1;
+    float resultado, usuario, divisor;
+    int n = 0, cedula;
 
     cout << "Digite o valor a ser decomposto: ";
     cin >> usuario;
+    usuario = usuario + 0.00001;
     
     do 
     {
@@ -31,18 +32,17 @@ int main()
             case 10: divisor = 0.1 ; break;
             case 11: divisor = 0.05 ; break;
             case 12: divisor = 0.01 ; break;
-            default: divisor = 0.00; break;
         }
         
-        result1 = usuario / divisor;
-        if(result1 > 0.00)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        cedula = usuario / divisor;
+        if(cedula > 0.00)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
         {
-            resultado = usuario - (divisor*result1);
-            cout << "A quantidade de cedulas/moedas de R$" << divisor << " eh " << result1 << endl; 
+            resultado = usuario - (divisor*cedula);
+            cout << "A quantidade de cedulas/moedas de R$" << divisor << " eh " << cedula << endl; 
             usuario = resultado;
         }
     }
-    while (divisor > 0.00);
+    while (divisor >= 0.00);
     system("pause");
 
     return 0;
