@@ -1,0 +1,5 @@
+EXERCÍCIO 1
+1-Determinar a quantidade de salários a serem analisados;
+2-Determinar o valor de cada salário;
+3-Comparar os salários;
+4-Determinar o maior salário.

@@ -1,0 +1,5 @@
+EXERCÍCIO 6
+01-Dar um valor a n;
+02-Determinar os divisores de n;
+03-Com exceção do próprio valor de n, somar os divisores de n;
+04-Se o resultado da soma for igual a n, o número é perfeito. Se    for diferente de n, não é perfeito.

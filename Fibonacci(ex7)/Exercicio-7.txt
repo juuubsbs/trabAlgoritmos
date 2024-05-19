@@ -1,0 +1,5 @@
+EXERCÍCIO 7
+01-Definir a quantidade de termos que deseja na sequência;
+02-Iniciar a sequência com os termos 1 e 1;
+03-Determinar o próximo termo somando os dois anteriores a ele;
+04-Repetir o passo 3 até alcançar a quantidade desejada de    termos.

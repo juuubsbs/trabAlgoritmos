@@ -1,0 +1,7 @@
+EXERCÍCIO 8 
+01-O embaralhador coloca a moeda em um copo de sua escolha;
+02-O embaralhador movimenta os copos entre si, os trocando de    posição, quantas vezes desejar;
+03-Enquanto o passo 2 ocorre, o adivinhador presta atenção na    movimentação dos copos;
+04-O embaralhador para de movimentar os copos;
+05-O adivinhador dá um palpite de onde está a moeda;
+06-O embaralhador diz se o palpite está certo ou errado.

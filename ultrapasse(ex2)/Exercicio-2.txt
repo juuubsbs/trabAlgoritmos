@@ -1,0 +1,6 @@
+EXERCÍCIO 2
+1-Somar simultaneamente
+ 150.000 (3% de 5.000.000) a 5.000.000;
+ 140.000 (2% de 7.000.000) a 7.000.000;
+2-Determinar o intervalo de tempo:
+ A cada 3%/2% somados = 1 ano.

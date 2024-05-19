@@ -1,0 +1,4 @@
+EXERCÍCIO 4
+01-Estipular um número a n (com 2 ou mais dígitos);
+02-Separar os dígitos do número inicial, de modo que virem    números distintos (ex.: 156 -> 1 , 5 e 6);
+03-Somar os números obtidos da separação (1+5+6).

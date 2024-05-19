@@ -1,0 +1,5 @@
+EXERCÍCIO 5
+01-Determinar o número que inicia o intervalo;
+02-Determinar o número que finaliza o intervalo;
+03-Determinar quais números dentro desse intervalo são primos;
+04-Somar os números primos.

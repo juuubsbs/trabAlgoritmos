@@ -1,0 +1,16 @@
+EXERCÍCIO 3
+01-Determinar o valor monetário;
+02-Dividir o valor pela maior nota disponível;
+03-Anotar o resultado;
+04-Dividir o valor restante (resto da divisão anterior) pela      próxima maior nota disponível;
+05-Anotar o resultado;
+06-Repetir os passos 4 e 5 até que
+   a.não seja mais possível realizar a divisão com as notas      disponíveis;
+   b.o resultado seja 0;
+07-No caso de não ser possível dividir pelas notas, iniciar a      divisão com moedas;
+08-Dividir o valor restante pela maior moeda disponível;
+09-Anotar o resultado;
+10-Dividir o valor restante pela próxima maior moeda disponível;
+11-Anotar o resultado;
+12-Repetir os passos 10 e 11 até que o resultado seja zero;
+13-Com as anotações dos resultados obtidos, determinar, através    do quociente, a quantidade de notas e moedas utilizadas.
