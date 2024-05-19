@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int usuario, resultado, soma; 
+    int usuario = 0, resultado = 0, soma = 0; 
     
     cout << "Digite o numero que deseja obter a soma: ";
     cin >> usuario;
