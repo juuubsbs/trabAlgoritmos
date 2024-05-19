@@ -76,6 +76,7 @@ int main()
                  cout << "voce podera dizer quantas vezes ela sera mudada: ";
                  cin >> cont;
             
+                //função que conta de acordo com o numero de vezes que troca
                  while(cont > 0)
                  {
                     if (pos < 3)
