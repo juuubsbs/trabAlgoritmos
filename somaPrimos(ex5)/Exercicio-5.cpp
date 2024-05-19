@@ -21,7 +21,11 @@ int main()
 
     for (i = ent1; i <= ent2; i++)
     {
-        if( i%2 != 0 && i%3 != 0 )
+        if( i == 1)
+        {
+            soma = soma;
+        }
+        else if( i%2 != 0 && i%3 != 0 )
         {
                 soma = soma + i;
         }
@@ -29,7 +33,6 @@ int main()
         {
             soma = soma + i;
         }
-        cout << soma << endl;
     }
     
     cout << "A soma dos numeros primos presentes no intervalo eh: "<< soma << endl;
