@@ -17,5 +17,6 @@ int main()
     cout << "O tempo necessario eh de " <<  i << " anos.";
     
  
+    system ("pause");
     return 0;
 }
