@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int salario, quantidade, i, lixo = 0;
+    int salario, quantidade, i, maior = 0;
 
     cout << "Digite a quantidade de salários que você deseja analisar: ";
     cin >> quantidade;
@@ -15,15 +15,15 @@ int main()
         cout << "Digite o salário " << i << " : ";
         cin >> salario;
 
-        if (lixo < salario)
+        if (maior < salario)
         {
-            lixo = salario;
+            maior = salario;
         }
-        cout << lixo << endl;
+        cout << maior << endl;
         
     }
 
-    cout << "O salário mais alto é : " << lixo;
+    cout << "O salário mais alto é : " << maior;
 
 
 
